@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="../views/style.css">
+      <link rel="stylesheet" href="./views/media.css">
+      <script src="../views/script.js"></script>
+      <title>NodeJS project</title>
+   </head>
+   <body>
+      <section class="header">
+         <div class="container">
+            <div class="head">
+               <div class="logo">
+                  <img src="../views/images/logo.jpg">
+                  <span>DISPLAY</span>
+               </div>
+               <div class="icons">
+                  <ul>
+                     <li><a href="https://instagram.com" class="instagram"></a></li>
+                     <li><a href="https://plus.google.com/" class="google"></a></li>
+                     <li><a href="https://ru.pinterest.com/" class="pinterest"></a></li>
+                     <li><a href="" class="icon3"></a></li>
+                     <li><a href="https://facebook.com" class="facebook"></a></li>
+                     <li><a href="https://twitter.com" class="twitter" ></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="menu">
+               <nav>
+                  <ul>
+                     <li><a href="/home" >Home</a></li>
+                     <li><a href="/contact" >Contact</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </section>
+      <section class="login">
+         <div class="container">
+            <div class="wrapper_login">
+               <div class="login_text" id="text_need">
+                  <span>REGISTER</span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="portfolio">
+         <div class="container">
+         <div class="container_registration">
+            <h2 class="regisrt">Registration</h2>
+            <input type="text" id="loginInputReg" placeholder="enter the username"><br>
+            <input type="password" id="passInputReg" placeholder="enter the pass"><br>
+            <button class="butt_registr" onclick="signUp()">Sign up</button>
+            <div class="reset"><a  href="/reset">Forgot password?</a></div>
+         </div>
+         </div>
+         </div>
+      </section>
+      <section class="footer">
+         <div class="container">
+            <div class="wrapper_footer">
+               <div class="footer_text">
+                  <span>COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED.</span>
+               </div>
+               <div class="footer_paths">
+                  <span class="footer_home" onclick="window.location.href = '/home';">home  </span>/<span class="footer_contact" onclick="contact()">  contact</span>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+</html>

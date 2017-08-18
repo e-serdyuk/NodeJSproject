@@ -1,0 +1,577 @@
+@font-face {
+    font-family: novecento;
+    /* Имя шрифта */
+    
+    src: url(.//fonts/Novecentosanswide-DemiBold-webfont.woff);
+    /* Путь к файлу со шрифтом */
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0 auto;
+    font-family: novecento;
+}
+.container {
+    width: 67%;
+    margin: 0 auto;
+}
+.head {
+    overflow: hidden;
+    line-height: 109px;
+    border-bottom: 1px solid #dadada;
+}
+.icons {
+    overflow: hidden;
+    float: right;
+    width: 50%;
+    position: relative;
+    top: 15px;
+}
+.logo,
+.login_text {
+    float: left;
+    width: 50%;
+    position: relative;
+    top: 15px;
+}
+.logo span,
+.login_text span {
+    font-size: 24px;
+    position: relative;
+    top: -16px;
+    margin-left: 14px;
+    color: #737373;
+}
+.icons ul {
+    overflow: hidden;
+    text-align: right;
+    padding-left: 0;
+}
+.icons li {
+    float: right;
+    list-style-type: none;
+}
+.icons li:last-child {
+    margin-right: 0;
+}
+.menu {
+    overflow: hidden;
+    line-height: 71px;
+    width: 100%;
+    margin: 0 auto;
+}
+.menu li a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 18px;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 37px;
+}
+.menu li:hover,
+#menu li:hover {
+    color: #2ecc71;
+    cursor: pointer;
+}
+.menu li a:hover {
+    color: #2ecc71;
+}
+.login {
+    line-height: 100px;
+    width: 100%;
+    background-color: #2ecc71;
+}
+.login_text {
+    width: 50%;
+}
+.login_text span,
+.contact_text span {
+    font-size: 30px;
+    color: white;
+    margin-left: 0;
+}
+.wrapper_login,
+.wrapper_contact,
+.wrapper_footer {
+    overflow: hidden;
+}
+.login_block {
+    width: 49%;
+    float: right;
+    text-align: right;
+}
+.login_block input {
+    width: 100px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    background-color: #2ecc71;
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+    text-indent: 3px;
+    font-weight: 600;
+}
+.login_block input:-moz-placeholder {
+    color: white;
+}
+.login_block input::-webkit-input-placeholder {
+    color: white;
+}
+.login_block button,
+.portfolio button {
+    padding: 10px 15px;
+    background-color: white;
+    color: #2ecc71;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 27px;
+    font-weight: bold;
+}
+.login_block input:last-of-type {
+    margin-left: 18px;
+}
+.paths {
+    margin: 50px 0;
+    font-size: 18px;
+    color: #8a8888;
+}
+.paths span:hover {
+    color: #2ecc71;
+    cursor: pointer;
+}
+.contact {
+    line-height: 138px;
+    width: 100%;
+    background-color: #322f2f;
+}
+.contact_text {
+    float: left;
+    width: 76%;
+}
+.contact_text span {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.contact_button {
+    float: right;
+    width: 23.5%;
+    text-align: right;
+}
+.contact_button button {
+    width: 220px;
+    border: 0;
+    color: white;
+    background-color: #2ecc71;
+    font-size: 14px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 700;
+}
+.footer {
+    line-height: 65px;
+    width: 100%;
+    background-color: #efefef;
+}
+.footer_text {
+    float: left;
+    width: 50%;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    font-family: arial;
+    font-weight: 700;
+}
+.footer_paths {
+    float: right;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    font-size: 12px;
+    margin-right: 12%;
+}
+.footer_paths span {
+    cursor: pointer;
+}
+.projects {
+    width: 100%;
+    height: 290px;
+}
+figure {
+    position: relative;
+    width: 32%;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+figure:nth-child(3n+2) {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.projects_edit {
+    background-image: url('.//images/edit.png');
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 22%;
+    position: absolute;
+    left: 34%;
+    top: 34%;
+}
+.projects_view {
+    background-image: url('.//images/view.png');
+    background-repeat: no-repeat;
+    width: 19%;
+    height: 22%;
+    position: absolute;
+    left: 52%;
+    top: 34%;
+}
+.projects_delete {
+    background-image: url('.//images/delete.png');
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 14%;
+    position: absolute;
+    left: 46%;
+    top: 54%;
+}
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    color: #fff;
+    background: rgba(80, 209, 128, .9);
+    opacity: 0;
+    transition: opacity .3s;
+    cursor: pointer;
+    font: 32px sans-serif;
+    letter-spacing: 3px;
+}
+figure:hover figcaption {
+    opacity: 1;
+}
+.view_head {
+    overflow: hidden;
+    margin-bottom: 60px;
+    color: #a5a5a5;
+}
+.view_image {
+    float: left;
+    width: 32%;
+}
+.view_image img {
+    width: 100%;
+}
+.view_content_add {
+    float: right;
+    width: 49.5%;
+    text-align: right;
+    padding-top: 20px;
+}
+.view_content,
+.content_edit {
+    float: right;
+    width: 26.5%;
+    text-align: left;
+    margin-right: 36%;
+}
+.view_content h2,
+.view_content_add h2,
+.content_edit h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.view_author,
+.view_date {
+    font-size: 14px;
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 50px;
+    padding-left: 17%;
+    padding-bottom: 20px;
+}
+.view_author {
+    background: url('.//images/icon_view1.png') no-repeat 3% 28%;
+}
+.view_date {
+    background: url('.//images/icon_view2.png') no-repeat 3% 45%;
+}
+.view_description {
+    margin-bottom: 75px;
+    font-size: 14px;
+    color: #737373;
+    line-height: 2.5;
+}
+.view_content input,
+.view_content_add input,
+.content_edit input {
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+    ;
+    outline: none;
+    font-size: 14px;
+    width: 80%;
+    padding: 10px 0;
+}
+.view_content input:first-of-type,
+.view_content_add input:first-of-type {
+    margin-top: 74px;
+}
+.content_edit input:first-of-type {
+    margin-top: 74px;
+}
+.view_content input:-moz-placeholder,
+.view_description input:-moz-placeholder,
+#loginInputReg:-moz-placeholder,
+#passInputReg:-moz-placeholder {
+    color: #a5a5a5;
+}
+.view_content input::-webkit-input-placeholder,
+.view_description input::-webkit-input-placeholder,
+#loginInputReg::-webkit-input-placeholder,
+#passInputReg::-webkit-input-placeholder {
+    color: #a5a5a5;
+}
+.view_description input,
+.view_description_add input {
+    width: 59%;
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+    ;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.portfolio button {
+    background-color: #2ecc71;
+    color: white;
+    margin-left: 0;
+    margin-bottom: 80px;
+    padding-top: -20px;
+}
+.descr_edit {
+    margin-bottom: 30px;
+}
+.file-upload input[type="file"] {
+    display: none;
+    /* скрываем input file */
+}
+/* задаем стили кнопки выбора файла*/
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+    height: 252px;
+    margin-top: 50px;
+    background: url('./images/plus_area.png') no-repeat;
+    width: 284px;
+}
+/* Растягиваем label на всю область блока .file-upload */
+
+.file-upload label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#file-name {
+    position: relative;
+    top: 234px;
+}
+.login_span {
+    color: white;
+    font-size: 18px;
+}
+.twitter {
+    background: url('./images/icon1.jpg') no-repeat;
+}
+.facebook {
+    background: url('./images/icon2.jpg') no-repeat;
+}
+.icon3 {
+    background: url('./images/icon3.jpg') no-repeat;
+}
+.pinterest {
+    background: url('./images/icon4.jpg') no-repeat;
+}
+.google {
+    background: url('./images/icon5.jpg') no-repeat;
+}
+.instagram {
+    background: url('./images/icon6.jpg') no-repeat;
+}
+.icons li a {
+    padding: 20px;
+}
+.twitter:hover {
+    background: url('./images/icon1.png') no-repeat;
+}
+.facebook:hover {
+    background: url('./images/icon2.png') no-repeat;
+}
+.icon3:hover {
+    background: url('./images/icon3.png') no-repeat;
+}
+.pinterest:hover {
+    background: url('./images/icon4.png') no-repeat;
+}
+.google:hover {
+    background: url('./images/icon5.png') no-repeat;
+}
+.instagram:hover {
+    background: url('./images/icon6.png') no-repeat;
+}
+.menu li a.active_path,
+.all {
+    color: #2ecc71;
+}
+#table_show {
+    margin-bottom: 50px;
+}
+#loginInputReg,
+#passInputReg {
+    height: 32px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+}
+.regisrt {
+    margin-top: 100px;
+    color: #8a8888;
+}
+#contact_form {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+#contact_form input,
+#contact_form textarea {
+    width: 99%;
+    height: 42px;
+    margin-bottom: 15px;
+    border: 2px solid #8a8888;
+    font-size: 14px;
+    text-indent: 15px;
+}
+#contact_form h2 {
+    margin-top: 88px;
+    margin-bottom: 25px;
+    color: #8a8888;
+    font-size: 24px;
+    font-weight: 500;
+}
+#contact_form textarea {
+    height: 218px;
+    text-indent: 7px;
+}
+#contact_form input#submit_contact {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    width: 30%;
+    text-indent: 0;
+    cursor: pointer;
+    float: left;
+}
+.reset {
+    margin-bottom: 300px;
+}
+.reset a {
+    color: #2ecc71;
+    font-size: 16px;
+}
+.portfolio button.butt_registr {
+    margin-bottom: 45px;
+}
+.usertorecovery {
+    margin-top: 30px;
+    color: #8a8888;
+    font-size: 24px;
+}
+.info_reset {
+    margin-top: 90px;
+    color: #8a8888;
+    font-size: 18px;
+}
+.regisrt {
+    margin-bottom: 30px;
+}
+
+#resetPasswordRecovery1,
+#resetPasswordRecovery2 {
+    margin-bottom: 350px;
+    height: 32px;
+    font-size: 16px;
+}
+.view_date {
+    padding-top: 12px;
+}
+.container_add {
+    width: 47%;
+}
+.view_description_add input {
+    width: 100%;
+}
+.view_head_add {
+    overflow: hidden;
+    margin-bottom: 16px;
+    color: #a5a5a5;
+}
+.view_content_add input,
+.view_description_add input {
+    border-bottom: 1px solid #e4e4e4;
+}
+.submit_add {
+    background-color: #2ecc71;
+    color: white;
+    margin-left: 0;
+    margin-bottom: 80px;
+    padding-top: -20px;
+    padding: 10px 15px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.google_map {
+    width: 100%;
+}
+.view_content_add input {
+    width: 100%;
+}
+.view_content_add {
+    width: 40%;
+}
+#passInputReg {
+    margin-bottom: 20px;
+}
+#resetPasswordRecovery1,
+#resetPasswordRecovery2 {
+    margin-bottom: 20px;
+}
+.portfolio button.button_recovery {
+    margin-bottom: 220px;
+}
+#forgotpass{   height: 32px;
+    font-size: 16px;margin-bottom: 20px;}
+.portfolio button.forgotpass_button{margin-bottom: 350px;}

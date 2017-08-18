@@ -1,0 +1,493 @@
+@media only screen and (max-width: 1600px) {
+    .projects_delete {
+        width: 18%;
+        left: 46%;
+        top: 56%;
+    }
+    .projects_edit {
+        left: 30%;
+        width: 24%;
+        height: 26%;
+    }
+    .projects_view {
+        left: 55%;
+        width: 24%;
+        height: 26%;
+    }
+    .projects {
+        height: 255px;
+    }
+    #contact_form input#submit_contact {
+        padding: 0;
+        width: 37%;
+    }
+    .container_add {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1367px) {
+    .projects {
+        height: 230px;
+    }
+    .projects_delete {
+        height: 20%;
+        top: 57%;
+    }
+    .projects_edit {
+        left: 28%;
+    }
+    .projects_view {
+        left: 56%;
+    }
+    .contact_button {
+        width: 30.5%;
+    }
+    .contact_text {
+        width: 69%;
+    }
+    .view_content h2,
+    .view_content_add h2 {
+        margin-bottom: 14px;
+    }
+    .view_author,
+    .view_date {
+        padding-left: 22%;
+    }
+    .view_head {
+        margin-bottom: 30px;
+    }
+    #contact_form {
+        width: 55%;
+    }
+    .content_edit input:first-of-type {
+        margin-top: 38px;
+    }
+    .container_add {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    figure {
+        width: 49%;
+    }
+    figure:nth-child(3n+2) {
+        margin: 0;
+    }
+    figure:nth-child(2n) {
+        margin-left: 2%;
+    }
+    .projects {
+        height: 300px;
+    }
+    .projects_edit {
+        width: 20%;
+        height: 22%;
+        left: 32%;
+        top: 34%;
+    }
+    .projects_view {
+        width: 19%;
+        height: 22%;
+        left: 54%;
+        top: 34%;
+    }
+    .projects_delete {
+        width: 15%;
+        height: 16%;
+        left: 46%;
+        top: 55%;
+    }
+    .login_block input {
+        top: 8px;
+    }
+    .login_block button,
+    .portfolio button {
+        margin-left: 10px;
+    }
+    .login_block input:last-of-type {
+        margin-left: 5px;
+    }
+    .login_text span,
+    .contact_text span {
+        font-size: 20px;
+    }
+    .contact_text {
+        width: 67%;
+    }
+    .contact_button {
+        width: 32.5%;
+    }
+    .view_author,
+    .view_date {
+        padding-bottom: 7px;
+    }
+    .view_content h2,
+    .view_content_add h2 {
+        font-size: 21px;
+    }
+    #contact_form {
+        width: 60%;
+    }
+    #image_edit {
+        width: 34%;
+    }
+    .container_add {
+        width: 80%;
+    }
+    .portfolio button.butt_registr {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .footer_paths {
+        margin-right: 0
+    }
+    .container {
+        width: 85%;
+    }
+    .login_text span,
+    .contact_text span {
+        font-size: 17px;
+    }
+    .contact_button {
+        width: 34.5%;
+    }
+    .contact_text {
+        width: 65%;
+    }
+    .logo,
+    .login_text {
+        top: 18px;
+    }
+    .paths {
+        font-size: 16px;
+    }
+    #contact_form h2 {
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .container {
+        width: 90%;
+    }
+    .login_text {
+        width: 45%;
+    }
+    .login_block {
+        width: 55%;
+    }
+    .paths {
+        margin: 30px 0;
+        font-size: 14px;
+    }
+    .projects {
+        height: 255px;
+    }
+    .projects_edit {
+        height: 24%;
+    }
+    .projects_view {
+        height: 24%;
+        width: 20%;
+    }
+    .footer_text {
+        width: 60%;
+    }
+    .view_author,
+    .view_date {
+        padding-left: 30%;
+    }
+    .view_content {
+        width: 30.5%;
+        margin-right: 30%;
+    }
+    #contact_form {
+        width: 67%;
+    }
+    #image_edit {
+        width: 36%;
+    }
+    .content_edit input:first-of-type {
+        margin-top: 28px;
+    }
+    .container_add {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 687px) {
+    .login_text span,
+    .contact_text span {
+        display: none;
+    }
+    .login_block {
+        width: 100%;
+    }
+    .contact_button {
+        text-align: center;
+        width: 100%;
+    }
+    .container {
+        width: 85%;
+    }
+    figure {
+        width: 100%;
+    }
+    .projects {
+        height: 355px;
+    }
+    figure:nth-child(2n),
+    figure:nth-child(3n+2) {
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+    .projects_edit {
+        left: 35%;
+        top: 35%;
+    }
+    .projects_view {
+        left: 52%;
+        top: 35%;
+    }
+    .footer_text {
+        width: 70%;
+    }
+    .wrapper_footer {
+        font-size: 11px;
+    }
+    .icons {
+        width: 60%;
+    }
+    .logo {
+        width: 40%;
+    }
+    .view_image {
+        float: left;
+        width: 41%;
+    }
+    .view_content {
+        width: 32%;
+        margin-right: 23%;
+    }
+    .view_content h2,
+    .view_content_add h2 {
+        text-align: center;
+    }
+    #text_need span {
+        display: block;
+    }
+    .view_content {
+        width: 47%;
+        margin-right: 0;
+    }
+    #contact_form {
+        width: 73%;
+    }
+    #text_need {
+        width: 100%;
+    }
+    #image_edit {
+        width: 100%;
+        float: none;
+    }
+    .content_edit {
+        float: none;
+        margin-right: 0;
+        width: 72.5%;
+    }
+    .descr_edit {
+        margin-top: -30px;
+    }
+    #button_edit {
+        margin-left: 0;
+    }
+    #image_add {
+        width: 100%;
+        float: none;
+    }
+    .view_content_add {
+        float: none;
+        text-align: left;
+        margin-bottom: 14px;
+        width: 100%;
+    }
+    .view_content input:first-of-type,
+    .view_content_add input:first-of-type {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 536px) {
+    .icons {
+        display: none;
+    }
+    .footer_text {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .footer_paths {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .footer {
+        line-height: 55px;
+    }
+    .projects {
+        height: 300px;
+    }
+    .logo {
+        width: 90%;
+    }
+    .projects_edit {
+        left: 31%;
+        top: 33%;
+    }
+    .projects_view {
+        left: 56%;
+        top: 33%;
+    }
+    .projects_delete {
+        top: 58%;
+    }
+    .paths {
+        margin: 20px 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    .view_image {
+        width: 51%;
+    }
+    .view_author,
+    .view_date {
+        padding-left: 34%;
+        font-size: 13px;
+    }
+    #text_need {
+        width: 100%;
+    }
+    #contact_form {
+        width: 82%;
+    }
+    #contact_form input#submit_contact {
+        width: 45%;
+    }
+    iframe {
+        height: 380px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .projects {
+        height: 275px;
+    }
+    .projects_delete {
+        left: 47%;
+    }
+    .login_block input {
+        width: 80px;
+    }
+    .login_block button,
+    .portfolio button {
+        margin-left: 4px;
+    }
+    .footer_text,
+    .footer_paths {
+        font-size: 10px;
+    }
+    .container {
+        width: 90%;
+    }
+    #table_show {
+        margin-bottom: 20px;
+    }
+    .paths {
+        font-size: 10px;
+    }
+    .view_image {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .view_content {
+        width: 100%;
+        float: none;
+    }
+    #text_need {
+        text-align: center;
+    }
+    #contact_form {
+        width: 90%;
+    }
+    #contact_form input#submit_contact {
+        width: 55%;
+    }
+    #contact_form input,
+    #contact_form textarea {
+        width: 98%;
+    }
+    .container_add {
+        width: 100%;
+    }
+    #file-name {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+    }
+    #table_show {
+        margin-bottom: 3px;
+    }
+    .projects {
+        height: 250px;
+    }
+    figure {
+        margin-left: 0;
+        margin-bottom: 1px;
+    }
+    figure:nth-child(2n),
+    figure:nth-child(3n+2) {
+        margin-left: 0;
+        margin-bottom: 1px;
+    }
+    .login_block {
+        text-align: center;
+    }
+    .menu li a {
+        font-size: 16px;
+    }
+    .menu li {
+        margin-right: 16px;
+    }
+    .menu ul,
+    .logo {
+        padding-left: 10px;
+    }
+    .head {
+        line-height: 85px;
+    }
+    .view_description {
+        margin-bottom: 25px;
+        padding-left: 5px;
+    }
+    .login {
+        line-height: 80px;
+    }
+    .content_edit {
+        width: 100%;
+    }
+    .content_edit input {
+        width: 99%;
+        text-indent: 5px;
+    }
+    .view_description input {
+        width: 99%;
+    }
+    .view_head_add input,
+    .view_description_add input {
+        text-indent: 5px;
+    }
+    .container_registration {
+        padding-left: 20%;
+    }
+}
