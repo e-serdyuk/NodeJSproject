@@ -69,7 +69,7 @@ function showData(p) {
         for (var n = 0; n < users.length; n++) {
             var elem2 = document.createElement('img');
             var f = document.createElement('figure');
-            elem2.setAttribute("src", './views/' + users[n].src);
+            elem2.setAttribute("src", '../views/' + users[n].src);
             elem2.setAttribute("class", 'projects');
             var ff = document.createElement('figcaption');
             var a1 = document.createElement('a');
@@ -93,7 +93,7 @@ function showData(p) {
         var elemAdd = document.createElement('img');
         var aAdd = document.createElement('a');
         var f = document.createElement('figure');
-        elemAdd.setAttribute("src", './views/images/plus_area.png');
+        elemAdd.setAttribute("src", '../views/images/plus_area.png');
         elemAdd.setAttribute("class", 'projects add_item');
 
         aAdd.setAttribute("href", '/new');
@@ -263,7 +263,7 @@ function forgotpass() {
         if (isIdExist) { 
         var obj = JSON.parse('{"userName":"' + el1.value + '"}');
         forgotXhr(obj, function(result) {
-            var el1 = document.getElementsByClassName('info_reset')[0].innerHTML = "Please check your mail to reset password;";
+            
         })
         } else {
               alert(' this user can not found, try again');
@@ -282,6 +282,7 @@ function forgotXhr(obj, func) {
     xhr.send(JSON.stringify(obj));
     xhr.onload = function() {
         if (xhr.status === 200) {
+            alert("Please check your mail to reset password;")
             return func(xhr.responseText);
         }
     }
@@ -315,4 +316,8 @@ function userPassWordRecoveryXhr(obj, func) {
             return func(xhr.responseText);
         }
     }
+}
+function deleteClasses() {
+    var el1 = document.getElementsByClassName('view_head')[0].innerHTML="";
+    var el2 = document.getElementsByClassName('view_description')[0].innerHTML="";
 }

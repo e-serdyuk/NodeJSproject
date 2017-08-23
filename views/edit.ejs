@@ -55,13 +55,18 @@
                   <img src="../views/<%= src %>">
                </div>
                <div class="content_edit" >
-                  <input type="text" name="title" placeholder="Project title">
-                  <input type="text" name="author" placeholder="Project author">
-                  <input type="text" name="Category" placeholder="Category">
+                  <input type="text" name="title" value="<%= title %>" placeholder="Project title">
+                  <input type="text" name="author" value="<%= author %>" placeholder="Project author">
+                  <input type="text" name="Category" value="<%= category %>" placeholder="Category">
                </div>
             </div>
             <div class="view_description descr_edit">
-               <input type="text" name="Description" placeholder="Description">
+               <%if (description.indexOf('|')>0) { %>
+               <input type="text" name="Description" value="<%= description.split('|')[1] %>" placeholder="Description">
+               <% } %>
+               <%if (description.indexOf('|')<0) { %>
+               <input type="text" name="Description" value="<%= description %>" placeholder="Description">
+               <% } %>
             </div>
             <button id="button_edit" onclick="changeItem(<%= id %>)">DONE</button>
          </div>

@@ -48,8 +48,9 @@
       <section class="portfolio">
          <div class="container">
             <div class="paths">
-               <span class="all_p">ALL  </span>/<span class="print">  PRINT  </span>/<span class="photo">  PHOTOGRAPHY  </span>/<span class="web">  WEB  </span>/<span class="applications">  APPLICATIONS  </span>
+               <span class="all" onclick="showAll();deleteClasses();">ALL  </span>/<span class="print" onclick="print();deleteClasses();" >  PRINT  </span>/<span class="photo" onclick="photo();deleteClasses();">  PHOTOGRAPHY  </span>/<span class="web" onclick="web();deleteClasses();">  WEB  </span>/<span class="applications" onclick="app();deleteClasses();">  APPLICATIONS  </span>
             </div>
+            <div id="table_show"></div>
             <div class="view_head">
                <div class="view_image">
                   <img src="../views/<%= src %>">

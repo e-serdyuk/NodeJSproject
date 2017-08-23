@@ -314,6 +314,7 @@
     .view_content_add input:first-of-type {
         margin-top: 0;
     }
+    .add_item{height: auto;width: 100%;}
 }
 @media only screen and (max-width: 536px) {
     .icons {
@@ -374,6 +375,7 @@
     iframe {
         height: 380px;
     }
+    .add_item{height: auto;width: 100%;}
 }
 @media only screen and (max-width: 410px) {
     .projects {
@@ -430,6 +432,7 @@
     #file-name {
         font-size: 14px;
     }
+    .add_item{height: auto;width: 100%;}
 }
 @media only screen and (max-width: 320px) {
     .container {
